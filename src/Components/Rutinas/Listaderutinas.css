@@ -1,0 +1,311 @@
+:root {
+  --listaderutinas-background: #ffffff;
+  --listaderutinas-foreground: #000000;
+  --listaderutinas-card: #ffffff;
+  --listaderutinas-card-foreground: #000000;
+  --listaderutinas-primary: #e02424;
+  --listaderutinas-primary-foreground: #ffffff;
+  --listaderutinas-secondary: #f3f4f6;
+  --listaderutinas-secondary-foreground: #374151;
+  --listaderutinas-muted: #9ca3af;
+  --listaderutinas-muted-foreground: #6b7280;
+  --listaderutinas-border: #e5e7eb;
+
+  /* Dark mode variables */
+  --listaderutinas-background-dark: #1a202c;
+  --listaderutinas-foreground-dark: #f7fafc;
+  --listaderutinas-card-foreground-dark: #f7fafc;
+  --listaderutinas-primary-dark: #575e67;
+  --listaderutinas-primary-foreground-dark: #f7fafc;
+  --listaderutinas-secondary-dark: #4a5568;
+  --listaderutinas-secondary-foreground-dark: #e2e8f0;
+  --listaderutinas-muted-dark: #718096;
+  --listaderutinas-muted-foreground-dark: #a0aec0;
+  --listaderutinas-border-dark: #4a5568;
+
+  /* Added variables */
+  --background-light: #eee3dd;
+  --background-dark: #333333;
+
+  /* Button styles */
+  --button-background-light: #ffffff;
+  --button-text-light: #000000;
+  --button-background-dark: #444444;
+  --button-text-dark: #f7fafc;
+  
+  /* Text styles */
+  --text-light: #000000;
+  --text-dark: #f7fafc;
+}
+
+body {
+  background-color: #f7faff;
+  color: var(--listaderutinas-foreground);
+}
+
+body.dark-mode {
+  background-color: var(--listaderutinas-background-dark);
+  color: var(--listaderutinas-foreground-dark);
+}
+
+.listaderutinas-contenedor.light {
+  background-color: #f7faff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.listaderutinas-contenedor.dark {
+  background-color: var(--background-dark);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+body.dark-mode .listaderutinas-contenedor {
+  background-color: var(--background-dark);
+  color: var(--listaderutinas-card-foreground-dark);
+}
+
+.listaderutinas-table.light {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #5c71b6;
+  color: var(--listaderutinas-card-foreground);
+  border: 1px solid var(--listaderutinas-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.listaderutinas-table.dark {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--listaderutinas-secondary-dark);
+  color: var(--text-dark);
+  border: 1px solid var(--listaderutinas-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+body.dark-mode .listaderutinas-table {
+  background-color: var(--listaderutinas-card-dark);
+  color: var(--listaderutinas-card-foreground-dark);
+  border: 1px solid var(--listaderutinas-border-dark);
+}
+
+.listaderutinas-table th,
+.listaderutinas-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--listaderutinas-border);
+}
+
+body.dark-mode .listaderutinas-table th,
+body.dark-mode .listaderutinas-table td {
+  border-bottom: 1px solid var(--listaderutinas-border-dark);
+}
+
+.listaderutinas-table.dark th {
+  background-color: var(--listaderutinas-secondary);
+  color: var(--listaderutinas-secondary-dark);
+  font-weight: bold;
+  text-align: left;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--button-text-light);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ajusta el color según el tema */
+.listaderutinas-contenedor.light .action-button {
+  color: var(--button-text-light);
+}
+
+.listaderutinas-contenedor.dark .action-button {
+  color: var(--button-text-dark);
+}
+
+.associate-client-dropdown {
+  position: absolute;
+  background: var(--dropdown-bg);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+/* Puedes ajustar los estilos adicionales según tus necesidades */
+
+
+.listaderutinas-table.light th {
+  background-color: #236dc9;
+  color: #fbf7f2;
+  font-weight: bold;
+  text-align: left;
+}
+.odd-row{
+background-color: var(--table-tr-child-bg);
+}
+.even-row{
+  background-color: var(--table-tr-bg);
+}
+.listaderutinas-table.dark th {
+  background-color: var(--table-th-bg);
+  color: var(--listaderutinas-secondary-foreground-dark);
+}
+
+.listaderutinas-table td {
+  background-color: var(--listaderutinas-card);
+  color: var(--listaderutinas-card-foreground);
+}
+
+.listaderutinas-table.dark td {
+  background-color: var(--listaderutinas-card-dark);
+  color: var(--listaderutinas-card-foreground-dark);
+}
+
+/* Alternating row colors for dark mode */
+body.dark-mode .listaderutinas-table tr:nth-child(even) td {
+  background-color: rgb(51, 51, 51); /* Darker row */
+}
+
+body.dark-mode .listaderutinas-table tr:nth-child(odd) td {
+  background-color: rgb(68, 68, 68); /* Lighter row */
+}
+
+/* Alternating row colors for light mode */
+.listaderutinas-table.light tr:nth-child(even) td {
+  background-color: #f9f9f9; /* Lighter row */
+}
+
+.listaderutinas-table.light tr:nth-child(odd) td {
+  background-color: #ffffff; /* Darker row */
+}
+.listaderutinas-table tr:last-child td {
+  border-bottom: none;
+}
+
+.listaderutinas-table .listaderutinas-actions {
+  text-align: right;
+  width: 200px;
+}
+
+.listaderutinas-table th.listaderutinas-actions,
+.listaderutinas-table td.listaderutinas-actions {
+  text-align: right;
+  width: 200px;
+}
+
+.listaderutinas-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.listaderutinas-dropbtn {
+  background-color: var(--button-background-light);
+  color: var(--button-text-light);
+  border: 2px dashed var(--button-text-light);
+  padding: 10px;
+  cursor: pointer;
+}
+
+body.dark-mode .listaderutinas-dropbtn {
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  border: 2px dashed var(--button-text-dark);
+}
+
+.listaderutinas-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--listaderutinas-card);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+body.dark-mode .listaderutinas-dropdown-content {
+  background-color: var(--listaderutinas-card-dark);
+}
+
+.listaderutinas-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+body.dark-mode .listaderutinas-dropdown-content a {
+  color: var(--listaderutinas-card-foreground-dark);
+}
+
+.listaderutinas-dropdown-content a:hover {
+  background-color: var(--listaderutinas-secondary);
+}
+
+body.dark-mode .listaderutinas-dropdown-content a:hover {
+  background-color: var(--listaderutinas-secondary-dark);
+}
+
+.listaderutinas-dropdown:hover .listaderutinas-dropdown-content {
+  display: block;
+}
+
+.listaderutinas-dropdown:hover .listaderutinas-dropbtn {
+  background-color: var(--listaderutinas-primary-dark);
+}
+
+.button {
+  background-color: var(--button-background-light);
+  color: var(--button-text-light);
+  border: 2px dashed var(--button-text-light);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+body.dark-mode .button {
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  border: 2px dashed var(--button-text-dark);
+}
+
+.input {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  border: 1px solid #747474;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .input {
+  background-color: var(--background-dark); 
+  color: var(--text-dark);
+  border: 1px solid var(--button-text-dark);
+}
+/* Alternating row colors for light mode */
+.even-row td {
+  background-color: #f9f9f9; /* Lighter row */
+}
+
+.odd-row td {
+  background-color: #ffffff; /* Darker row */
+}
+
+/* Alternating row colors for dark mode */
+body.dark-mode .even-row td {
+  background-color: rgb(51, 51, 51); /* Darker row */
+}
+
+body.dark-mode .odd-row td {
+  background-color: rgb(68, 68, 68); /* Lighter row */
+}

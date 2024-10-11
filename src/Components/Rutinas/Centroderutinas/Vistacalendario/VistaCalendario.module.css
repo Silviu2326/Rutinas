@@ -1,0 +1,96 @@
+/* src/components/Rutinas/Centroderutinas/Vistacalendario/VistaCalendario.module.css */
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #343a40b6;
+  padding: 8px;
+  border-radius: 10px;
+  color: #d6d5c8;
+  width: fit-content;
+}
+
+.phaseLabel {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.calendarContainer {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /* Para navegadores Firefox */
+}
+
+.calendarContainer::-webkit-scrollbar {
+  display: none; /* Para navegadores Webkit */
+}
+
+.weekContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px; /* Aumentar el margen derecho */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.weekContainer:hover {
+  transform: scale(1.05);
+}
+
+.weekBox {
+  width: 80px; /* Aumentar el ancho */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weekLabel {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.weekDate {
+  font-size: 10px;
+  margin-top: 5px;
+  white-space: nowrap; /* Evitar el salto de línea */
+}
+
+.bar {
+  width: 40px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.barInner {
+  width: 100%;
+  background-color: #007bff;
+  position: absolute;
+  bottom: 0;
+  transition: height 0.3s ease;
+}
+
+.addWeekButton {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.addWeekButton:hover {
+  background-color: #0056b3;
+}

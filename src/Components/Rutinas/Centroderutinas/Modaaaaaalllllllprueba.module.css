@@ -1,0 +1,92 @@
+/* src/components/Rutinas/Centroderutinas/Modaaaaaalllllllprueba.module.css */
+
+.customModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    z-index: 1050; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .customModalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    max-height: 90%;
+    overflow-y: auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle más énfasis */
+  }
+  
+  .customModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .customModalTitle {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .customModalBody {
+    margin-top: 10px;
+  }
+  
+  .customModalFooter {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .customButton {
+    margin-right: 10px;
+  }
+  
+  .dayColor0 {
+    background-color: #FFCCCC;
+  }
+  
+  .dayColor1 {
+    background-color: #CCFFCC;
+  }
+  
+  .dayColor2 {
+    background-color: #CCCCFF;
+  }
+  
+  .dayColor3 {
+    background-color: #FFFFCC;
+  }
+  
+  .dayColor4 {
+    background-color: #FFCCFF;
+  }
+  
+  .dayColor5 {
+    background-color: #CCFFFF;
+  }
+  
+  .dayColor6 {
+    background-color: #FFCC99;
+  }
+  
+  .selectedRow {
+    background-color: #007bff !important;
+    color: white !important;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .uploadButton {
+    margin-top: 10px;
+  }
+  

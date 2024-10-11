@@ -1,0 +1,149 @@
+.weekContainerWrapper {
+  display: flex;
+  flex-direction: column; /* Coloca los botones de acción arriba y el contenido debajo */
+  align-items: center;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+
+
+.weekContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: hidden; /* Evita que se muestre la barra de desplazamiento horizontal */
+  flex-grow: 1;
+  scroll-behavior: smooth;
+}
+
+.addDayButton {
+  background: none;
+  border: none;
+  color: #5a5a5a;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.addDayButton:hover {
+  color: #131313;
+}
+
+.weekContainer .addDayButton {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.scrollButton {
+  background: none;
+  border: none;
+  color: #5a5a5a;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.scrollButton:hover {
+  color: #131313;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -15px; /* Adjust top position to be above the component */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px; /* Adjust this based on your card width */
+  padding: 0 10px; /* Ensure padding doesn't exceed container */
+  box-sizing: border-box;
+}
+
+.navButton {
+  background: none;
+  border: 1px solid #007bff; /* Add border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #007bff;
+  padding: 5px 10px; /* Add padding for better appearance */
+}
+
+.navButton.left {
+  margin-right: auto; /* Align left button to the left */
+}
+
+.navButton.right {
+  margin-left: auto; /* Align right button to the right */
+}
+
+.dayWrapper {
+  position: relative; /* Ensure relative positioning */
+  display: flex;
+  margin-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerButton {
+  position: absolute;
+  top: -15px; /* Adjust top position to align with arrows */
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: 1px solid #5a5a5a; /* Grey border */
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #5a5a5a;
+  padding: 5px 10px;
+}
+
+.centerButton:hover {
+  color: #131313;
+  border-color: #131313;
+}
+.buttonRow {
+  display: flex;
+  flex-direction: row; /* Alinea los botones de acción en fila */
+  justify-content: flex-start; /* Alinea los botones de acción a la izquierda */
+  gap: 10px;
+  margin-bottom: 20px; /* Espacio debajo de los botones de acción */
+  width: 100%; /* Asegura que el contenedor de botones de acción ocupe todo el ancho */
+}
+.weekContent {
+  display: flex;
+  flex-direction: row; /* Asegura que el contenido de la semana y los botones de desplazamiento estén en fila */
+  align-items: center;
+  margin-top: 10px;
+  width: 100%; /* Asegura que el contenido de la semana ocupe todo el ancho */
+}
+
+.uploadCsvButton,
+.testModalButton,
+.transferButton {
+  background: linear-gradient(to right, #21618C, #2E86C1);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0; /* Previene que los botones se expandan */
+}
+
+.uploadCsvButton:hover,
+.testModalButton:hover,
+.transferButton:hover {
+  background: linear-gradient(to right, #0056b3, #0086ff);
+}

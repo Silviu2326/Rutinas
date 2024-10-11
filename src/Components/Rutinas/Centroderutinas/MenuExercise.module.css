@@ -1,0 +1,66 @@
+/* src/components/Rutinas/MenuExercise.module.css */
+
+.modal {
+    max-width: 90%;
+  }
+  
+  .exerciseItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .exerciseItem img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  /* src/components/Rutinas/pages/EditRoutinePage.module.css */
+
+.exerciseContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.exerciseHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.exerciseImage {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.exerciseName {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.exerciseDetails {
+  margin-top: 10px;
+}
+
+.exerciseTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.exerciseTable th,
+.exerciseTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.exerciseTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}

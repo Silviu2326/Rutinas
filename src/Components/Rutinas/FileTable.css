@@ -1,0 +1,277 @@
+:root {
+  --filetable-background: #ffffff;
+  --filetable-foreground: #000000;
+  --filetable-card: #ffffff;
+  --filetable-card-foreground: #000000;
+  --filetable-primary: #e02424;
+  --filetable-primary-foreground: #ffffff;
+  --filetable-secondary: #f3f4f6;
+  --filetable-secondary-foreground: #374151;
+  --filetable-muted: #9ca3af;
+  --filetable-muted-foreground: #6b7280;
+  --filetable-border: #e5e7eb;
+
+  /* Dark mode variables */
+  --filetable-background-dark: #1a202c;
+  --filetable-foreground-dark: #f7fafc;
+  --filetable-card-dark: #2d3748;
+  --filetable-card-foreground-dark: #f7fafc;
+  --filetable-primary-dark: #e53e3e;
+  --filetable-primary-foreground-dark: #f7fafc;
+  --filetable-secondary-dark: #4a5568;
+  --filetable-secondary-foreground-dark: #e2e8f0;
+  --filetable-muted-dark: #718096;
+  --filetable-muted-foreground-dark: #a0aec0;
+  --filetable-border-dark: #4a5568;
+
+  /* Added variables */
+  --background-light: #eee3dd;
+  --background-dark: #333333;
+
+  /* Button styles */
+  --button-background-light: #ffffff;
+  --button-text-light: #000000;
+  --button-background-dark: #444444;
+  --button-text-dark: #f7fafc;
+  
+  /* Text styles */
+  --text-light: #000000;
+  --text-dark: #f7fafc;
+}
+
+body {
+  background-color: var(--filetable-background);
+  color: var(--filetable-foreground);
+}
+
+body.dark-mode {
+  background-color: var(--filetable-background-dark);
+  color: var(--filetable-foreground-dark);
+}
+
+.filetable-container {
+  background-color: var(--background-light);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+body.dark-mode .filetable-container {
+  background-color: var(--background-dark);
+}
+
+.filetable-upload-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.filetable-upload-section input[type="file"] {
+  display: none;
+}
+
+.filetable-upload-section label {
+  background-color: #ffffff;
+  color: #374151;
+  border: 2px solid #d1d5db;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .filetable-upload-section label {
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  border: 2px dashed var(--button-text-dark);
+}
+
+.filetable-upload-section label:hover {
+  background-color: #f3f4f6;
+}
+
+.filetable-upload-section .filetable-upload-button {
+  background-color: #e02424;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode .filetable-upload-section .filetable-upload-button {
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  border: 2px dashed var(--button-text-dark);
+}
+
+.filetable-upload-section .filetable-upload-button:hover {
+  background-color: #c81e1e;
+}
+
+.filetable-upload-section .filetable-upload-button:disabled {
+  background-color: #f87171;
+  cursor: not-allowed;
+}
+
+.filetable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--filetable-card);
+  color: var(--filetable-card-foreground);
+  border: 1px solid var(--filetable-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+body.dark-mode .filetable {
+  background-color: var(--filetable-card-dark);
+  color: var(--filetable-card-foreground-dark);
+  border: 1px solid var(--filetable-border-dark);
+}
+
+.filetable th,
+.filetable td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--filetable-border);
+}
+
+body.dark-mode .filetable th,
+body.dark-mode .filetable td {
+  border-bottom: 1px solid var(--filetable-border-dark);
+}
+
+.filetable th {
+  background-color: var(--filetable-secondary);
+  color: var(--filetable-secondary-foreground);
+  font-weight: bold;
+  text-align: left;
+}
+
+body.dark-mode .filetable th {
+  background-color: var(--filetable-secondary-dark);
+  color: var(--filetable-secondary-foreground-dark);
+}
+
+.filetable td {
+  background-color: var(--filetable-card);
+  color: var(--filetable-card-foreground);
+}
+
+body.dark-mode .filetable td {
+  background-color: var(--filetable-card-dark);
+  color: var(--filetable-card-foreground-dark);
+}
+
+.filetable tr:last-child td {
+  border-bottom: none;
+}
+
+.filetable .filetable-status-success {
+  color: #28a745; /* green */
+}
+
+.filetable .filetable-status-failed {
+  color: #dc3545; /* red */
+}
+
+.filetable .filetable-status-processing {
+  color: #ffc107; /* yellow */
+}
+
+.filetable .filetable-size {
+  text-align: right;
+}
+
+.filetable .filetable-actions {
+  text-align: right;
+  width: 100px;
+}
+
+.filetable th:first-child,
+.filetable td:first-child {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.filetable th:last-child,
+.filetable td:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.filetable th.filetable-actions,
+.filetable td.filetable-actions {
+  text-align: right;
+  width: 100px;
+}
+
+.filetable th.filetable-size,
+.filetable td.filetable-size {
+  text-align: right;
+  width: 120px;
+}
+
+.filetable-dropdown-button.light .btn-primary {
+  background-color: var(--button-background-light) !important;
+  color: var(--button-text-light) !important;
+  border: 2px dashed var(--button-text-light) !important;
+}
+
+.filetable-dropdown-button.dark .btn-primary {
+  background-color: var(--button-background-dark) !important;
+  color: var(--button-text-dark) !important;
+  border: 2px dashed var(--button-text-dark) !important;
+}
+.filetable-container.light {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.filetable-container.dark {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.filetable.light {
+  background-color: var(--filetable-card);
+  color: var(--filetable-card-foreground);
+}
+
+.filetable.dark {
+  background-color: var(--filetable-card-dark);
+  color: var(--filetable-card-foreground-dark);
+}
+
+.filetable-container.dark {
+  background-color: var(--listaderutinas-background-dark);
+  color: var(--listaderutinas-foreground-dark);
+}
+
+.filetable.dark {
+  background-color: var(--listaderutinas-card-dark);
+  color: var(--listaderutinas-card-foreground-dark);
+  border: 1px solid var(--listaderutinas-border-dark);
+}
+
+.filetable th.dark {
+  background-color: var(--listaderutinas-secondary-dark);
+  color: var(--listaderutinas-secondary-foreground-dark);
+}
+
+.filetable td.dark {
+  background-color: var(--listaderutinas-card-dark);
+  color: var(--listaderutinas-card-foreground-dark);
+}
+
+.filetable tr:last-child td.dark {
+  border-bottom: none;
+}
+
+/* Asegúrate de que los botones y otros elementos también se adapten al modo oscuro */
+.filetable-dropdown-button.dark .btn-primary {
+  background-color: var(--button-background-dark) !important;
+  color: var(--button-text-dark) !important;
+  border: 2px dashed var(--button-text-dark) !important;
+}

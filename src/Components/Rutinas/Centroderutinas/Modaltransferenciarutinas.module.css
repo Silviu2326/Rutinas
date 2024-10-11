@@ -1,0 +1,59 @@
+.modal-header {
+  background-color: #f8f9fa;
+}
+
+.modal-title {
+  color: #343a40;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  background-color: #f8f9fa;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.mtWeeksContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-left: 10px;
+}
+
+.mtWeek {
+  margin-bottom: 15px;
+}
+
+.mtWeekHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mtDaysContainer {
+  padding-left: 20px;
+}
+
+.mtDayCheckbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mtDayCheckbox .form-check {
+  margin-right: 10px;
+}

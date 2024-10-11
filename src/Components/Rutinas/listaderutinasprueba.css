@@ -1,0 +1,123 @@
+/* src/components/Listaderutinas.css */
+:root {
+    --listaderutinas-background: #ffffff;
+    --listaderutinas-foreground: #000000;
+    --listaderutinas-card: #ffffff;
+    --listaderutinas-card-foreground: #000000;
+    --listaderutinas-primary: #e02424;
+    --listaderutinas-primary-foreground: #ffffff;
+    --listaderutinas-secondary: #f3f4f6;
+    --listaderutinas-secondary-foreground: #374151;
+    --listaderutinas-muted: #9ca3af;
+    --listaderutinas-muted-foreground: #6b7280;
+    --listaderutinas-border: #e5e7eb;
+  }
+  
+  body {
+    background-color: var(--listaderutinas-background);
+    color: var(--listaderutinas-foreground);
+  }
+  
+  .listaderutinas-container {
+    background-color: #fdf2f2;
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+  
+  .listaderutinas-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--listaderutinas-card);
+    color: var(--listaderutinas-card-foreground);
+    border: 1px solid var(--listaderutinas-border);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .listaderutinas-table th,
+  .listaderutinas-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--listaderutinas-border);
+  }
+  
+  .listaderutinas-table th {
+    background-color: var(--listaderutinas-secondary);
+    color: var(--listaderutinas-secondary-foreground);
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .listaderutinas-table td {
+    background-color: var(--listaderutinas-card);
+    color: var(--listaderutinas-card-foreground);
+  }
+  
+  .listaderutinas-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .listaderutinas-table .listaderutinas-actions {
+    text-align: right;
+    width: 200px;
+  }
+  
+  .listaderutinas-table th:first-child,
+  .listaderutinas-table td:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  
+  .listaderutinas-table th:last-child,
+  .listaderutinas-table td:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  
+  .listaderutinas-table th.listaderutinas-actions,
+  .listaderutinas-table td.listaderutinas-actions {
+    text-align: right;
+    width: 200px;
+  }
+  
+  .listaderutinas-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .listaderutinas-dropbtn {
+    background-color: var(--listaderutinas-primary);
+    color: var(--listaderutinas-primary-foreground);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .listaderutinas-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000; /* Ensure this is high enough to be on top */
+  }
+  
+  .listaderutinas-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .listaderutinas-dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .listaderutinas-dropdown:hover .listaderutinas-dropdown-content {
+    display: block;
+  }
+  
+  .listaderutinas-dropdown:hover .listaderutinas-dropbtn {
+    background-color: #3e8e41;
+  }
+  

@@ -1,0 +1,105 @@
+/* ExerciseComponent.module.css */
+
+.exerciseContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.moveButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.moveButton {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.moveButton.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.exerciseContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exerciseImageContainer {
+  flex: 1;
+}
+
+.exerciseImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.exerciseInfo {
+  flex: 2;
+  padding: 10px;
+}
+
+.exerciseName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.exerciseDetails {
+  flex: 3;
+}
+
+.exerciseDetailsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.exerciseDetailsTable th,
+.exerciseDetailsTable td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+.wideColumn {
+  width: 25%;
+}
+
+.repsColumn {
+  width: 20%;
+}
+
+.notesColumn {
+  width: 10%;
+}
+
+.noteButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.addNoteButton {
+  color: green;
+}
+
+.exerciseActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.exerciseActionButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}

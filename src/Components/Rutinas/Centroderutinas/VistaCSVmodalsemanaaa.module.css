@@ -1,0 +1,91 @@
+.vistaCSVModalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .vistaCSVModalContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: auto;
+    max-width: 800px;
+    max-height: 80%;
+    overflow: visible;
+    z-index: 1001;
+  }
+  
+  .vistaCSVTableWrapper {
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+  
+  .vistaCSVTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .vistaCSVTable th,
+  .vistaCSVTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .vistaCSVModalHeader {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .vistaCSVModalTitle {
+    color: white;
+  }
+  
+  .vistaCSVModalBody {
+    background-color: #f8f9fa;
+  }
+  
+  .vistaCSVModalFooter {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .vistaCSVCloseButton {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  .vistaCSVDownloadButton {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .vistaCSVDownloadButton:focus {
+    outline: none;
+  }
+  
+  .vistaCSVTheadRow,
+  .vistaCSVTbodyRow {
+    text-align: center;
+  }
+  
+  .vistaCSVTh,
+  .vistaCSVTd {
+    padding: 10px;
+  }
+  

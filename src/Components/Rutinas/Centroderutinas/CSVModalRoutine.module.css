@@ -1,0 +1,222 @@
+/* Estilos para el modal en tema claro (predeterminados) */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: auto;
+  max-width: 800px;
+  max-height: 80%;
+  overflow: visible;
+  z-index: 1001;
+}
+
+.tableWrapper {
+  overflow: visible;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: auto;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table td {
+  position: relative;
+}
+
+.table input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.addButtonColumn {
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  margin-right: 25px;
+}
+
+.addButtonRow {
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  z-index: 1;
+  margin-bottom: 18px;
+}
+
+.addButton:focus, .addButtonRow:focus, .addButtonColumn:focus {
+  outline: none;
+}
+
+.addButtonCell {
+  position: relative;
+  padding: 0;
+  height: 48px;
+}
+
+.addButtonCell:last-child {
+  width: 48px;
+  height: 48px;
+}
+
+.addButtonWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addButtonWrapperRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.addButtonWrapperColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 25px;
+}
+
+.addRoutineButton {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.addRoutineButton:focus {
+  outline: none;
+}
+
+.addButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.tableCell {
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  width: 100%;
+}
+
+.suggestion {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background: #f0f0f0;
+}
+
+/* Tema oscuro */
+.dark .modalContent {
+  background: #2c2c2c;
+  color: #ffffff;
+}
+
+.dark .table th {
+  background-color: #444;
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 2px solid #555;
+}
+
+.dark .table td {
+  background-color: #333;
+  color: #ddd;
+}
+
+.dark .table input {
+  background: #444;
+  color: #ffffff;
+  border: 1px solid #555;
+  padding: 6px;
+}
+
+.dark .addButtonColumn,
+.dark .addButtonRow {
+  background: #555;
+}
+
+.dark .suggestions {
+  background: #444;
+  border-color: #555;
+}
+
+.dark .suggestion:hover {
+  background: #555;
+}
+
+.dark .addRoutineButton {
+  background: #4CAF50;
+  color: white;
+}
+
+.dark .addTestDataButton, 
+.dark button {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark button:hover {
+  background-color: #555;
+}

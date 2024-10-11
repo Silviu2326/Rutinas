@@ -1,0 +1,116 @@
+.popupdecreaciondeplanificacion-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupdecreaciondeplanificacion-popup-inner {
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 80%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para el modo claro */
+.popupdecreaciondeplanificacion-popup-inner.light {
+  background-color: var(--listaderutinas-card);
+  color: var(--listaderutinas-card-foreground);
+}
+
+/* Estilo para el modo oscuro */
+.popupdecreaciondeplanificacion-popup-inner.dark {
+  background-color: #262529;
+  color: var(--listaderutinas-card-foreground-dark);
+}
+
+/* Botón de cierre */
+.popupdecreaciondeplanificacion-close-button {
+  background-color: var(--button-background-light);
+  color: var(--button-text-light);
+  border: 2px dashed var(--button-text-light);
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  float: right;
+}
+
+/* Modo oscuro para el botón de cierre */
+.popupdecreaciondeplanificacion-close-button.dark {
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  border: 2px dashed var(--button-text-dark);
+}
+
+/* Estilo de los inputs en modo claro */
+.popupdecreaciondeplanificacion-input.light {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  border: 1px solid #747474;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Estilo de los inputs en modo oscuro */
+.popupdecreaciondeplanificacion-input.dark {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  border: 1px solid var(--button-text-dark);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Botón de envío en modo claro */
+.popupdecreaciondeplanificacion-button.light {
+  background-color: var(--button-background-light);
+  color: var(--button-text-light);
+  border: 2px dashed var(--button-text-light);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Botón de envío en modo oscuro */
+.popupdecreaciondeplanificacion-button.dark {
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  border: 2px dashed var(--button-text-dark);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Estilo del título */
+.popupdecreaciondeplanificacion-title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Estilo de los campos de formulario */
+.popupdecreaciondeplanificacion-field {
+  margin-bottom: 10px;
+}
+
+/* Estilo de las etiquetas */
+.popupdecreaciondeplanificacion-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: inherit; /* Respetar el color del tema */
+}

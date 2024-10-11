@@ -1,0 +1,142 @@
+/* src/components/ModalSemanaExcel.module.css */
+
+.Modalexcel-header {
+    background-color: #f5f5f5;
+  }
+  
+  .Modalexcel-title {
+    font-weight: bold;
+  }
+  
+  .Modalexcel-body {
+    padding: 20px;
+  }
+  
+  .Modalexcel-dayContainer {
+    margin-bottom: 20px;
+  }
+  
+  .Modalexcel-dayTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .Modalexcel-table {
+    width: 100%;
+  }
+  
+  .Modalexcel-thead {
+    background-color: #e9ecef;
+  }
+  
+  .Modalexcel-thead-row {
+    text-align: center;
+  }
+  
+  .Modalexcel-th {
+    font-weight: bold;
+  }
+  
+  .Modalexcel-tbody {
+    text-align: center;
+  }
+  
+  .Modalexcel-tbody-row {
+    text-align: center;
+  }
+  
+  .Modalexcel-td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .Modalexcel-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .Modalexcel-removeButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Modalexcel-addRow {
+    text-align: center;
+  }
+  
+  .Modalexcel-addButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Modalexcel-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Modalexcel-closeButton {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .Modalexcel-saveButton {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .Modalexcel-suggestions {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ced4da;
+    z-index: 1000;
+    width: calc(100% - 10px);
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .Modalexcel-suggestion {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .Modalexcel-suggestion:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Custom dropdown styles */
+  .Modalexcel-dropdown {
+    background-color: #e9ecef;
+    color: #333;
+    border: 1px solid #ced4da;
+  }
+  
+  .Modalexcel-dropdown .dropdown-toggle {
+    background-color: #e9ecef !important;
+    color: #333 !important;
+    border: none !important;
+  }
+  
+  .Modalexcel-dropdown .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+  }
+  
+  .Modalexcel-dropdown .dropdown-item {
+    color: #333;
+  }
+  
+  .Modalexcel-dropdown .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+  
